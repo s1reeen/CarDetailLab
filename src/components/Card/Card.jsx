@@ -1,8 +1,10 @@
+import css from "./Card.module.css";
+
 const Card = ({ image, text }) => {
   return (
     <div>
-      <img src={image} alt="" />
-      <p>{title}</p>
+      <img className={css.image} src={image} alt="" />
+      <p>{text}</p>
     </div>
   );
 };

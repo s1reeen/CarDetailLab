@@ -8,7 +8,7 @@ const Logo = ({ color }) => {
     >
       <g
         id="&#208;&#155;&#208;&#190;&#208;&#179;&#208;&#190;"
-        clip-path="url(#clip0_2002_330)"
+        clipPath="url(#clip0_2002_330)"
       >
         <path
           id="Vector"

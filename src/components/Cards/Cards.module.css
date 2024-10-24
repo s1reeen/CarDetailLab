@@ -1,0 +1,19 @@
+.cardsWrapper {
+  display: flex;
+}
+
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
