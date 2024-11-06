@@ -6,15 +6,42 @@ import card4 from "../../assets/card4.jpg";
 import css from "./Cards.module.css";
 
 const Cards = () => {
+  const cardsData = [
+    {
+      id: 1,
+      title: "Interior Clearing",
+      image: card1
+    },
+    {
+      id: 2,
+      title: "Polishing",
+      image: card2
+    },
+    {
+      id: 3,
+      title: "Quartz application",
+      image: card3
+    },
+    {
+      id: 4,
+      title: "Support & Maintenance",
+      image: card4
+    }
+  ];
+
   return (
     <div className={css.sliderContainer}>
       <h2>Work Progress</h2>
       <div className={css.slider}></div>
       <div className={css.cardsWrapper}>
-        <Card image={card1} text="Card 1" />
-        <Card image={card2} text="Card 2" />
-        <Card image={card3} text="Card 3" />
-        <Card image={card4} text="Card 4" />
+        {cardsData.map(card => (
+          <Card 
+            key={card.id} 
+            image={card.image} 
+            icon={card.icon} 
+            text={card.title} 
+          />
+        ))}
       </div>
     </div>
   );

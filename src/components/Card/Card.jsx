@@ -1,6 +1,6 @@
 import css from "./Card.module.css";
 
-const Card = ({ image, text }) => {
+const Card = ({ image, text}) => {
   return (
     <div>
       <img className={css.image} src={image} alt="" />
