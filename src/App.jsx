@@ -10,7 +10,7 @@ const App = () => {
       <Hero />
       <Cards />
       <Detailing />
-      <Testimonials />
+      <Testimonials /> 
     </div>
   );
 };
